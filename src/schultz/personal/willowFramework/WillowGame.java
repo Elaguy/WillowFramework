@@ -2,7 +2,6 @@ package schultz.personal.willowFramework;
 
 import java.io.IOException;
 
-// RUN PROGRAMMINGTIMER.PY!!!
 public class WillowGame {
 	
 	private boolean gameRunning;
