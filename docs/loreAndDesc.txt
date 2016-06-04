@@ -1,0 +1,35 @@
+Adraria
+-------
+- Capital city is Lierough
+- Features:
+  - Lierough
+  - Bandit camp
+  - Woodcutting Area
+  - Mining Area
+  - Ascendance Spire
+  - White Oak Vineyard
+- Bandit camp contains low-level
+opponents and loot
+	
+	Lierough
+	--------
+	- Features:
+	  - Royal Palace
+	  - "Adventurers' Gear" store
+	  - Lierough Town Square
+	  - Sir Baroff's house ruins
+	  - Church
+	  - "Dussels' Inn"
+	  - Lierough Royal Library
+	  - Sir Gawyn's manor
+	  - Willow Shallows (lake)
+	  - Fishing Area
+	  - Lierough Woodcutting Guild
+	- Largest city in the game
+	- Famous for expensive but magical
+	wines from the White Oak Vineyards
+	- Thriving economic center
+	- Features a quest to destroy the bandit
+	camp to the south-west
+	- Sir Baroff's Cave features many low-level
+	monsters and loot

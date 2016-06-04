@@ -1,0 +1,18 @@
+WillowFramework DEVLOG
+----------------------
+
+CURRENT VERSION: 0.2i (i for in-development)
+
+VERSION: 0.1i
+-------------
+- Classes created
+- Basic code for WillowGame, World, Display,
+and Player written
+
+VERSION: 0.2i
+-------------
+- 5 worlds implemented
+- Exporting event log implemented
+- World scrolling implemented
+- Event log improved
+- Added basic collision detection

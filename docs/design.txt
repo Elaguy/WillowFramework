@@ -1,0 +1,127 @@
+WillowSUD (single user-dungeon rpg)
+-----------------------------------
+
+CURRENT VERSION: 0.2i (i for in-development)
+
+********************************************************************
+The WillowFramework will not necessarily have all of these features.
+Instead, a WillowSUD project will be created and the code from
+WillowFramework copied. Same with a WillowMUD project.
+So, essentially, WillowFramework is the backbone for these two
+projects.
+********************************************************************
+
+DESCRIPTION: a command-line single-player rpg game.
+- Uses 5 worlds (2D string arrays) utilizing a world-scrolling feature.
+- Turn-based; every activity takes up one turn.
+
+CLASSES:
+- WillowGame.java (runs the game and makes the classes do their things)
+- World.java (responsible for the world)
+- Player.java (contains logic and stuff for the player)
+- Monster.java (ABSTRACT) (contains logic and stuff for the monsters)
+- Goblin.java (SUBCLASS OF MONSTER) (contains logic and stuff specifically for goblins)
+- Items.java (contains logic and stuff for the items)
+- Skills.java (contains logic and stuff for skills)
+- Display.java (get info from other classes and displays to user)
+- Log.java (other classes send Log a string message that is catagorized
+  as an event/message (excluding error notifications), stores them, and exports all of them
+  into a text file.)
+
+SKILLS:
+- Combat
+Increases when a player attacks the monsters.
+
+Starting level: 1
+Maximum level: 100
+
+10 XP per monster killed
+50 XP to advance to next level
+5000 XP total to get to max level
+
+
+- Mining
+Increases when a player mines in a designated
+mining area.
+
+Starting level: 1
+Maximum level: 100
+
+10 XP per ore mined
+50 XP to advance to next level
+5000 XP total to get to max level
+
+- Fishing
+Increases when a player fishes in a designated
+fishing area.
+
+Starting level: 1
+Maximum level: 100
+
+10 XP per fish caught
+50 XP to advance to next level
+5000 XP total to get to max level
+
+- Wood-chopping
+Increases when a player cuts down trees in a
+forest.
+
+Starting level: 1
+Maximum level: 100
+
+10 XP per tree chopped down
+50 XP to advance to next level
+5000 XP total to get to max level
+
+CLASSES IN DETAIL:
+
+- World
+A world is defined by a 15 x 20 2D array, which holds all of
+the elements of the world for display.
+
+When the world needs to be displayed, it sends the world
+information to the Display class.
+
+World is the class that does most of the work.
+
+- Player
+This class creates a new Player object, which is used to place
+a player into the world. The player has:
+   - A location (a row number and a column number)
+   - A name
+   - Skill levels (1 to 100)
+   - An inventory
+   - A currently wielded item: A player can only wield one
+   item unless it is a shield along with some kind of
+   weapon
+   - Currently worn items: A player can wear a maximum of 5
+   items that can be worn
+   - HP (health points): All players start with 100 HP.
+   Wearing armor helps hits from monsters to be less
+   effective. If a player's HP reaches 0, the player dies,
+   and the current game ends
+   
+- Monster (abstract)
+This class creates a new Monster object, which is used to place
+a monster into the world. A monster (regardless of the type):
+  - Spawns in a random square at game start and walks around 1
+  square each turn in a random direction
+  - (For now) Doesn't attack the player unless the player attacks
+  the monster
+  - When a monster dies, an object is chosen at random and is dropped
+  at the square the monster occupied before it died.
+Types of monsters:
+  - Goblins
+  
+- Item
+This class creates a new Item object, which is used to place an
+item into the world. An item has (regardless of the type):
+  - A name
+  - A value
+  - A type
+  - A location (row and column numbers)
+  
+- Skills
+This class lists the skills available in the game, the
+XP gained from a skill activity, and the amount of XP
+necessary to advance to the next level
