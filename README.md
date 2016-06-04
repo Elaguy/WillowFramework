@@ -5,3 +5,5 @@ This will eventually evolve into two seperate repositories/projects: WillowSUD (
 and WillowMUD (multi-user dungeon)
 
 No third-party libraries are bring used as of yet.
+
+Still in development.
